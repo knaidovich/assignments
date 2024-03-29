@@ -1,20 +1,14 @@
 public class TaskMethods {
     public static void printThreeWords() {
         System.out.println("Задание 1:");
-        System.out.println("Orange");
-        System.out.println("Banana");
-        System.out.println("Apple");
+        System.out.println("Orange\nBanana\nApple");
     }
 
     public static void checkSumSign() {
         System.out.println("Задание 2:");
         int a = 5;
         int b = -3;
-        if (a + b >= 0) {
-            System.out.println("Сумма положительная");
-        } else {
-            System.out.println("Сумма отрицательная");
-        }
+        System.out.println((a + b >= 0) ? "Сумма положительная" : "Сумма отрицательная");
     }
 
     public static void printColor() {
@@ -22,7 +16,7 @@ public class TaskMethods {
         int value = 101;
         if (value <= 0) {
             System.out.println("Красный");
-        } else if (value > 0 && value <= 100) {
+        } else if (value <= 100) {
             System.out.println("Желтый");
         } else {
             System.out.println("Зеленый");
@@ -33,32 +27,22 @@ public class TaskMethods {
         System.out.println("Задание 4:");
         int a = 7;
         int b = 8;
-        if (a >= b) {
-            System.out.println("a >= b");
-        } else {
-            System.out.println("a < b");
-        }
+        System.out.println(a >= b ? "a >= b" : "a < b");
     }
 
     public static boolean isSumInRange(int a, int b) {
         System.out.println("Задание 5:");
-        boolean result = a + b >= 10 && a + b <= 20;
-        return result;
+        return a + b >= 10 && a + b <= 20;
     }
 
     public static void checkPositiveOrNegative(int number) {
         System.out.println("Задание 6:");
-        if (number >= 0) {
-            System.out.println("Число " + number + " положительное");
-        } else {
-            System.out.println("Число " + number + " отрицательное");
-        }
+        System.out.println(number >= 0 ? "Число " + number + " положительное" : "Число " + number + " отрицательное");
     }
 
     public static boolean isNegative(int number) {
         System.out.println("Задание 7:");
-        boolean isNegative = number < 0;
-        return isNegative;
+        return number < 0;
     }
 
     public static void printStringMultipleTimes(String s, int count) {
@@ -70,19 +54,14 @@ public class TaskMethods {
 
     public static boolean isLeapYear(int year) {
         System.out.println("Задание 9:");
-        boolean isLeap = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
-        return isLeap;
+        return (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;
     }
 
     public static void invertArrayValues() {
         System.out.println("Задание 10:");
         int[] arr = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == 0) {
-                arr[i] = 1;
-            } else {
-                arr[i] = 0;
-            }
+            arr[i] = arr[i] == 0 ? 1 : 0;
             System.out.print(arr[i] + " ");
         }
         System.out.println();
