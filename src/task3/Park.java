@@ -2,9 +2,9 @@ package task3;
 
 public class Park {
     class Attraction {
-        String name;
-        String workingHours;
-        double price;
+        private String name;
+        private String workingHours;
+        private double price;
 
         public Attraction(String name, String workingHours, double price) {
             this.name = name;
@@ -13,7 +13,7 @@ public class Park {
         }
 
         public void printAttraction() {
-            System.out.println("Аттракцион: " + this.name + ", Время работы: " + this.workingHours + ", Стоимость: " + this.price);
+            System.out.println("Аттракцион: " + name + ", Время работы: " + workingHours + ", Стоимость: " + price);
         }
     }
 }
