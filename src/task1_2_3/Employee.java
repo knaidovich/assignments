@@ -1,4 +1,4 @@
-package task1_2;
+package task1_2_3;
 
 public class Employee {
     private String name;

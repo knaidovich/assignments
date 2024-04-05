@@ -1,7 +1,7 @@
-package task3;
+package task1_2_3;
 
 public class Park {
-    class Attraction {
+    public class Attraction {
         private String name;
         private String workingHours;
         private double price;
