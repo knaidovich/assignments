@@ -1,1 +1,12 @@
 # assignments
+- lesson_4 - Java Operators, Loops, Arrays, Methods
+- lesson_6 - OOP
+- lesson_7 - OOP
+- lesson_8 - Java Arrays
+- lesson_9 - Java Collections
+- Lesson_12_junit_5 - JUnit 5
+- Lesson_12_testng - TestNG
+- lesson_13 - Selenium WebDriver
+- lesson_14 - Selenium WebDriver
+- lesson_17 - REST Assured, Postman
+- lesson_18 - Allure Report
